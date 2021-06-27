@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://aoo-ghr-bnain-fyp.herokuapp.com/",
   "dependencies": {
     "16": "0.0.2",
     "@ant-design/icons": "^4.5.0",
