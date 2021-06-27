@@ -23,7 +23,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import AnimatedButton from '@bit/tabinda.react-button-animation.animated.button';
+// import AnimatedButton from '../animatedButton/ButtonHover';
 import {widthh , setWidthh} from '../sketch'
 import {heightt , setHeightt} from '../sketch'
 import setMyVar from '../sketch'
@@ -169,7 +169,7 @@ Change Password          </Button>
                             <div className="row">
                               <div className="col-xs-12">
 
-                              <AnimatedButton style = {{margin : "5%"}}
+                              <Button style = {{margin : "5%"}}
                               id = "getData"
                               label = "Get Data"
                                onClick={(e) => {
@@ -201,7 +201,7 @@ Change Password          </Button>
                                         progress: undefined,
                                                         });
                                                     });
-                                                }} >Get Data</AnimatedButton>
+                                                }} >Get Data</Button>
 
                                               
                                 </div>

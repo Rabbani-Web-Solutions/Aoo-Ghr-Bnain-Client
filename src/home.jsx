@@ -34,7 +34,7 @@ import { Close } from 'react-ionicons'
 
 import { toast } from "react-toastify";
 
-import AnimatedButton from '@bit/tabinda.react-button-animation.animated.button';
+// import AnimatedButton from 'animatedButton/ButtonHover';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -147,7 +147,7 @@ function Home() {
                      <div style={{marginTop: '10%'}}></div>
                          <Link to="/sketch" style={{textDecoration: 'none' }} >
                              
-                             <AnimatedButton style={{ marginTop: '20%' , align : 'center' }} label =    "Sketch App Estimate"/>
+                             <Button style={{ marginTop: '20%' , align : 'center' }} label =    "Sketch App Estimate"/>
                          
                          </Link>
 <div style={{marginTop: '10%'}}></div>
@@ -263,7 +263,7 @@ your Subscription today </p>
 </ol>
 <Link to="/signup" style={{textDecoration: 'none' }} >
                              
-                             <AnimatedButton style={{ marginTop: '20%' , align : 'center' }} 
+                             <Button style={{ marginTop: '20%' , align : 'center' }} 
                              label =    "We will be glad to see you "/>
                          
                          </Link>
@@ -389,7 +389,7 @@ style = {{background: "radial-gradient(100% 50% at 0% 50%, #593b3b 0%, hsla(0, 7
 </ol>
 <Link to="/sketch" style={{textDecoration: 'none' }} >
                              
-                             <AnimatedButton style={{ marginTop: '20%' , align : 'center' }} label =    "Sketch App"/>
+                             <Button style={{ marginTop: '20%' , align : 'center' }} label =    "Sketch App"/>
                          
                          </Link>
 
@@ -514,7 +514,7 @@ style = {{background: "radial-gradient(100% 50% at 0% 50%, #593b3b 0%, hsla(0, 7
 </ol>
 <Link to="/signup" style={{textDecoration: 'none' }} >
                              
-                             <AnimatedButton style={{ marginTop: '20%' , align : 'center' }} label =    "Subscribe"/>
+                             <Button style={{ marginTop: '20%' , align : 'center' }} label =    "Subscribe"/>
                          
                          </Link>
     </div></div>

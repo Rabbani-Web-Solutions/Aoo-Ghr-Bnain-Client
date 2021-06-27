@@ -1,6 +1,6 @@
 import {makeStyles} from "@material-ui/core/styles";
 import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
-import AnimatedButton from '@bit/tabinda.react-button-animation.animated.button';
+// import AnimatedButton from '../animatedButton/ButtonHover';
 import '../css/footer.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/dist/jquery.min.js'
@@ -13,6 +13,7 @@ import {faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import {faMap } from "@fortawesome/free-solid-svg-icons";
 import Typography from "@material-ui/core/Typography";
 import ScrollToTop from "react-scroll-up"
+
 
 function Copyright() {
     return (
@@ -158,7 +159,7 @@ function Footer (){
                                     <div class="form-row">
                                         <div class="col dk-footer-form">
                                             <Link to="/signup" style={{textDecoration: 'none' }} >
-                                                <AnimatedButton style={{ marginTop: '20%' , align : 'center' }} label =    "Subscribe"/>
+                                                {/* <Button style={{ marginTop: '20%' , align : 'center' }} label =    "Subscribe"/> */}
                                                     </Link>
                                                 </div>
                                             </div>
