@@ -1,5 +1,6 @@
 import './css/App.css';
 import './helper/responsive';
+import './css/Button.css';
 import Nav from './helper/nav';
 import PostForm from "./postForm";
 import AnimatedCursor from "react-animated-cursor"
