@@ -68,7 +68,7 @@ return (
 
 </fieldset>
 
-<button onClick={handleSubmit}>PAY</button>
+<button class="glow-on-hover" type="button" onClick={handleSubmit}>PAY</button>
 </form> 
  : 
 
