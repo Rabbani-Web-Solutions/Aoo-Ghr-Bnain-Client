@@ -169,7 +169,7 @@ Change Password          </Button>
                             <div className="row">
                               <div className="col-xs-12">
 
-                              <Button style = {{margin : "5%"}}
+                              <button class="glow-on-hover" type="button"
                               id = "getData"
                               label = "Get Data"
                                onClick={(e) => {
@@ -201,7 +201,7 @@ Change Password          </Button>
                                         progress: undefined,
                                                         });
                                                     });
-                                                }} >Get Data</Button>
+                                                }} >Get Data</button>
 
                                               
                                 </div>
