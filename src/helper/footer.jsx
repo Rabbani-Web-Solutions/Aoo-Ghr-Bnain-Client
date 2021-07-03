@@ -160,6 +160,7 @@ function Footer (){
                                         <div class="col dk-footer-form">
                                             <Link to="/signup" style={{textDecoration: 'none' }} >
                                                 {/* <Button style={{ marginTop: '20%' , align : 'center' }} label =    "Subscribe"/> */}
+                                                    <button class="glow-on-hover" type="button">Subscribe</button>
                                                     </Link>
                                                 </div>
                                             </div>
