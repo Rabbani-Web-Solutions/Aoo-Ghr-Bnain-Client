@@ -51,7 +51,14 @@ export const handleMouseMove = (event) => {
         const index = elements.length - 1;
         const {x1,y1} = elements[index];
         const sWidth = wall
-        updateElement(index, x1 , y1 , mouse.x, mouse.y , tool , sWidth);
+
+
+        let x = mouse.x || (event.touches[0].clientX - 8 );
+        let y = mouse.y || (event.touches[0].clientY - 385);
+
+        // alert(event.touches[0].clientX)
+
+        updateElement(index, x1 , y1 , x, y , tool , sWidth);
 
     }
     else if (action === "moving")
@@ -60,8 +67,10 @@ export const handleMouseMove = (event) => {
         const sWidth = selectedElement.roughElement.options.strokeWidth
         const width = x2-x1;
         const height = y2-y1;
-        const nexX1 = mouse.x- offsetX;
-        const nexY1 = mouse.y - offsetY;
+        const posX = mouse.x || (event.touches[0].clientX - 8 )
+        const posY = mouse.y || (event.touches[0].clientY - 385)
+        const nexX1 = posX - offsetX;
+        const nexY1 = posY - offsetY;
 
         // type.scale(mouse.x , mouse.y);
 
