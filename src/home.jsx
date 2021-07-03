@@ -147,7 +147,8 @@ function Home() {
                      <div style={{marginTop: '10%'}}></div>
                          <Link to="/sketch" style={{textDecoration: 'none' }} >
                              
-                             <Button style={{ marginTop: '20%' , align : 'center' }} label =    "Sketch App Estimate"/>
+//                              <button style={{ marginTop: '20%' , align : 'center' }} label =    "Sketch App Estimate"/>
+                                 <button class="glow-on-hover" type="button">Sketch App Estimate </button>
                          
                          </Link>
 <div style={{marginTop: '10%'}}></div>
@@ -263,8 +264,10 @@ your Subscription today </p>
 </ol>
 <Link to="/signup" style={{textDecoration: 'none' }} >
                              
-                             <Button style={{ marginTop: '20%' , align : 'center' }} 
-                             label =    "We will be glad to see you "/>
+//                              <Button style={{ marginTop: '20%' , align : 'center' }} 
+//                              label =    "We will be glad to see you "/>
+                                 
+                                 <button class="glow-on-hover" type="button">We will be glad to see you</button>
                          
                          </Link>
     </div>
@@ -389,7 +392,8 @@ style = {{background: "radial-gradient(100% 50% at 0% 50%, #593b3b 0%, hsla(0, 7
 </ol>
 <Link to="/sketch" style={{textDecoration: 'none' }} >
                              
-                             <Button style={{ marginTop: '20%' , align : 'center' }} label =    "Sketch App"/>
+//                              <Button style={{ marginTop: '20%' , align : 'center' }} label =    "Sketch App"/>
+                                 <button class="glow-on-hover" type="button">Sketch App</button>
                          
                          </Link>
 
@@ -514,7 +518,8 @@ style = {{background: "radial-gradient(100% 50% at 0% 50%, #593b3b 0%, hsla(0, 7
 </ol>
 <Link to="/signup" style={{textDecoration: 'none' }} >
                              
-                             <Button style={{ marginTop: '20%' , align : 'center' }} label =    "Subscribe"/>
+//                              <Button style={{ marginTop: '20%' , align : 'center' }} label =    "Subscribe"/>
+                                 <button class="glow-on-hover" type="button">Subscribe</button>
                          
                          </Link>
     </div></div>
