@@ -264,7 +264,7 @@ your Subscription today </p>
 <Link to="/signup" style={{textDecoration: 'none' }} >
                                                               
                                  <button style = {{
-                                                width:'500px' !important , 
+                                                width:'500px' , 
                                                 }} class="glow-on-hover" type="button">
                                      
                                      We will be glad to see you
@@ -395,7 +395,7 @@ style = {{background: "radial-gradient(100% 50% at 0% 50%, #593b3b 0%, hsla(0, 7
 <Link to="/sketch" style={{textDecoration: 'none' }} >
                              
                                  <button style = {{
-                                                width:'170px' !important , 
+                                                width:'170px' , 
                                                 }} class="glow-on-hover" type="button">Sketch App</button>
                          
                          </Link>
@@ -522,7 +522,7 @@ style = {{background: "radial-gradient(100% 50% at 0% 50%, #593b3b 0%, hsla(0, 7
 <Link to="/signup" style={{textDecoration: 'none' }} >
                              
                                  <button style = {{
-                                                width:'170px' !important , 
+                                                width:'170px' , 
                                                 }} class="glow-on-hover" type="button">Subscribe</button>
                          
                          </Link>
