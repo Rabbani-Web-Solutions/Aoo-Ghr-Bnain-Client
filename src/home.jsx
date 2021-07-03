@@ -267,7 +267,7 @@ your Subscription today </p>
 //                              <Button style={{ marginTop: '20%' , align : 'center' }} 
 //                              label =    "We will be glad to see you "/>
                                  
-                                 <button class="glow-on-hover" type="button">We will be glad to see you</button>
+//                                  <button class="glow-on-hover" type="button">We will be glad to see you</button>
                          
                          </Link>
     </div>
