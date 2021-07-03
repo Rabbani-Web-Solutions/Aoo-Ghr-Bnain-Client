@@ -20,8 +20,10 @@ export const handleMouseDown = (event) => {
         const element = getElementAtPosition(mouse.x, mouse.y, elements);
         if(element)
         {
-            const offsetX = mouse.x - element.x1 ;
-            const offsetY = mouse.y - element.y1 ;
+             const posX = mouse.x || (event.touches[0].clientX - 8 )
+            const posY = mouse.y || (event.touches[0].clientY - 385)
+            const offsetX = posX - element.x1 ;
+            const offsetY = posY - element.y1 ;
 
             setSelectedElement({...element,offsetX,offsetY});
             setAction("moving");
@@ -77,11 +79,44 @@ export const handleMouseDown = (event) => {
     }
 
     else {
-        setAction("drawing");
+       setAction("drawing");
         // const {clientX, clientY} = event;
         const id = elements.length;
-        const element =  createElement(id, mouse.x, mouse.y, mouse.x, mouse.y, tool);
+
+        console.log(event.target);
+
+        if(event.type === "mousedown")
+        {
+        const clientX = mouse.x; 
+        const clientY = mouse.y; 
+
+        console.log(clientX, clientY);
+
+        const { offsetLeft, offsetTop } = event.target;
+        const canvasX = clientX - offsetLeft;
+        const canvasY = clientY - offsetTop;
+
+        const element =  createElement(id, clientX , clientY, clientX, clientY, tool);
+
         setElements(prevState => [...prevState, element]);
+        }
+        else{
+        let clientX = event.touches[0].clientX; 
+        let clientY = event.touches[0].clientY; 
+
+            clientX = clientX - 8 ;
+            clientY = clientY - 385 ;
+
+        console.log(clientX, clientY)
+
+        const { offsetLeft, offsetTop } = event.target;
+        const canvasX = clientX - offsetLeft;
+        const canvasY = clientY - offsetTop;
+
+        const element =  createElement(id, clientX , clientY, clientX, clientY, tool);
+
+        setElements(prevState => [...prevState, element]);
+        }
 
 
     }
