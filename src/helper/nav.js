@@ -114,11 +114,6 @@ export default function TopMenu() {
     
     const history = useHistory();
 
-    const reRender = (e) => {
-
-        history.go(0);
-    }
-
 
     const [search, setSearch] = React.useState("");
     // const cart = useSelector((state) => state.cart);
@@ -179,7 +174,7 @@ export default function TopMenu() {
             <MenuItem>
                 {" "}
                 <Typography variant="h6">
-                    <Link to="/" className={classes.link} style={{ color: "black" }} onClick={reRender}>
+                    <Link to="/" className={classes.link} style={{ color: "black" }} >
                         Home
                     </Link>
                 </Typography>
@@ -190,7 +185,7 @@ export default function TopMenu() {
                         to="/sketch"
                         className={classes.link}
                         style={{ color: "black" }}
-                        // onClick={reRender} 
+                      
                         >
                         Sketch App
                     </Link>
@@ -204,7 +199,7 @@ export default function TopMenu() {
                         to="/contact-us"
                         className={classes.link}
                         style={{ color: "black" }}
-                        // onClick={reRender}
+                        
                         >
                         Contact us
                     </Link>
@@ -218,7 +213,7 @@ export default function TopMenu() {
                         to="/about"
                         className={classes.link}
                         style={{ color: "black" }}
-                        // onClick={reRender}
+                        
                         >
                         About us
                     </Link>
@@ -401,7 +396,7 @@ export default function TopMenu() {
                         </Typography>
                         <Typography variant="h6">
                             <Link to="/sketch" className={classes.link} 
-                            // onClick={reRender}
+                            
                             >
                                 Sketch App
                             </Link>
@@ -409,7 +404,7 @@ export default function TopMenu() {
 
                         <Typography variant="h6">
                             <Link to="/contact-us" className={classes.link} 
-                            // onClick={reRender}
+                            
                             >
                                 Contact us
                             </Link>
@@ -417,7 +412,7 @@ export default function TopMenu() {
 
                         <Typography variant="h6">
                             <Link to="/about" className={classes.link} 
-                            // onClick={reRender}
+                            
                             >
                                 About us
                             </Link>
