@@ -95,7 +95,7 @@ class userServices extends GenericServices {
 
       console.log(height)
 
-      this.post("http://localhost:5000/update", { sketchId , data ,width , height,totalLayer, id })
+      this.post("https://aoo-ghr-bnain-fyp.herokuapp.com/update", { sketchId , data ,width , height,totalLayer, id })
         .then((res) => {
           resolve(res);
         })  
