@@ -1467,6 +1467,10 @@ import { custom } from 'joi';
                                <Divider />
                                 <List>
                                     {[<div>
+                                            <Button onClick={()=>setElements(myVar[0])}>Draw</Button>
+                                        </div>     ,
+                                     
+                                     <div>
                                         <InputLabel htmlFor="input-with-icon-adornment">Enter Width (feet)</InputLabel>
                                             <Input
                                                 id="width"
