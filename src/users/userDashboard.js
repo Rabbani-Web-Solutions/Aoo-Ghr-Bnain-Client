@@ -212,7 +212,6 @@ Change Password          </Button>
 <>
 
 
-      <div className="col-md-4">
       <Card className={classes.root} style = {{marginTop : "4%"}}>
       <CardActionArea>
         <CardMedia
@@ -295,7 +294,7 @@ Change Password          </Button>
           Delete
         </Button>
       </CardActions>
-    </Card></div>
+    </Card>
 
 
    </> )}
