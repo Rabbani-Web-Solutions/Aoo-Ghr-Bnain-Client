@@ -3691,7 +3691,7 @@ import { custom } from 'joi';
                                             style = {{
                                                 background:bgColor , 
                                                 border : "5px solid darkslategrey" , 
-                                                marginTop : "3%" , marginBottom : "3%"}}
+                                                marginTop : "3%" , marginBottom : "3%" ,  touchAction: 'auto'}}
                     
                                             width = {canvWidth}
                                             height = {canvHeight}
