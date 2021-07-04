@@ -3658,6 +3658,51 @@ import { custom } from 'joi';
         />
 </div>
 
+<br/>
+
+{sketchData && id ? (
+
+<div>
+                                            <button class="glow-on-hover" type="button"
+                                             onClick={()=> {
+                                               
+                                                saveLayer();
+
+                                                
+                                               if(id){
+                                               UserServices.update(id , myVar ,widthh , heightt, totalLayer , UserServices.getLoggedinfo().id)
+                                               .then((data) => {
+                                                   console.log(data);
+                                                   toast.success(data, {
+                                                       position: "bottom-right",
+                                                       autoClose: 5000,
+                                                       hideProgressBar: false,
+                                                       closeOnClick: true,
+                                                       pauseOnHover: true,
+                                                       draggable: true,
+                                                       progress: undefined,
+                                                   });
+                                               })
+                                               .catch((err) => {
+                                                   toast.error(err.response.data, {
+                                                       position: "bottom-right",
+                                                       autoClose: 5000,
+                                                       hideProgressBar: false,
+                                                       closeOnClick: true,
+                                                       pauseOnHover: true,
+                                                       draggable: true,
+                                                       progress: undefined,
+                                                   });
+                                               });
+                                           }
+                                            }}>
+                                                UPDATE</button>
+                                        </div>
+) :  
+
+("")
+
+}
 
 
 {error ? (
