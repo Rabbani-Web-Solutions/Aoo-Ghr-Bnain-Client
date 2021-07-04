@@ -85,6 +85,24 @@ class userServices extends GenericServices {
           reject(err);
         });
     });
+  
+     update = (sketchId , elements ,width , height, totalLayer , id) =>
+    new Promise((resolve, reject) => {
+
+      var data = JSON.stringify(elements);
+
+      console.log(id)
+
+      console.log(height)
+
+      this.post("http://localhost:5000/update", { sketchId , data ,width , height,totalLayer, id })
+        .then((res) => {
+          resolve(res);
+        })  
+        .catch((err) => {
+          reject(err);
+        });
+    });
 
     change = (sub , role) =>
     new Promise((resolve, reject) => {
