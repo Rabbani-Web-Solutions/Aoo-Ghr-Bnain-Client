@@ -1467,7 +1467,14 @@ import { custom } from 'joi';
                                <Divider />
                                 <List>
                                     {[<div>
-                                            <Button onClick={()=>setElements(myVar[0])}>Draw</Button>
+                                            <Button onClick={()=> {
+                                                if(sketchData && id){
+                                                    setElements(myVar[0])}   
+                                                
+                                                else{
+                                                    alert("Please Select a Sketch From Dashboard")
+                                                }}}>
+                                                Draw</Button>
                                         </div>     ,
                                      
                                      <div>
