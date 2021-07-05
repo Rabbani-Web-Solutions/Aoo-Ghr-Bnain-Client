@@ -5,7 +5,7 @@ const generator = rough.generator();
 
 export function createElement(id, x1, y1, x2, y2 , type , sWidth){
     const roughElement = type === "line"
-        ? generator.line(x1,y1,x2,y2, { roughness: 0 , strokeWidth: wall})
+        ? generator.line(x1,y1,x2,y2, { roughness: 0 , strokeWidth: sWidth})
 
         : type === "rectangle" ? generator.rectangle(x1, y1, x2-x1, y2-y1 , { roughness: 0 , strokeWidth: sWidth })
 
